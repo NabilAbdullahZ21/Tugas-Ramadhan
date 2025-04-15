@@ -20,10 +20,11 @@ function casting($orang){
     $hasilCasting=[];
     foreach($orang as $value){
         $value['umur']= (int) $value['umur'];
-        $value['jenis_kelamin']=$value['jenis_kelamin'] == 'L'? 'Laki-laki' : 'Perempuan';
+        $value['jenis_kelamin']=$value['jenis_kelamin'] == 'L'? 'laki-laki' : 'permepuan';
         $hasilCasting[]=$value;
     }
     return $hasilCasting;
 }
 $hasilCasting= casting($orang);
 print_r($hasilCasting);
+?>
